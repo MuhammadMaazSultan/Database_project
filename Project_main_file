@@ -52,7 +52,6 @@ CREATE TABLE affiliations (
     organization_id INT NOT NULL,
     function TEXT NOT NULL,
     professor_id INT NOT NULL,
-    PRIMARY KEY (organization_id, professor_id)
 );
 
 -- Insert data into the AFFILIATIONS table
