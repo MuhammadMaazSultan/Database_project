@@ -51,7 +51,7 @@ FROM university_professors;
 CREATE TABLE affiliations (
     organization_id INT NOT NULL,
     function TEXT NOT NULL,
-    professor_id INT NOT NULL,
+    professor_id INT NOT NULL
 );
 
 -- Insert data into the AFFILIATIONS table
@@ -64,7 +64,7 @@ FROM university_professors AS university_professors
 JOIN professors AS prof 
     ON university_professors.firstname = prof.firstname 
     AND university_professors.lastname = prof.lastname
-LEFT JOIN organizations AS org 
+JOIN organizations AS org 
     ON university_professors.organization = org.organization;
 
 --SHOW RESULTS IN AFFILATIIONS
